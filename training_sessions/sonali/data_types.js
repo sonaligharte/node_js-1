@@ -147,3 +147,74 @@ for(var key in obj){
   console.log("Keys and values inside object are :: ", key, obj[key]);
 
 }
+
+// changes in file
+console.log("Hello");
+
+var name = "Sonali";
+var lName = "Gharte";
+var fName = name + lName;
+fName;
+console.log(fName);
+var i =30.50;
+typeof(i);
+var x = 1/0;
+console.log(x);
+var number = 1;
+var string = '1';
+var equality_using_double = number == string;
+var equality_using_tripple = number === string;
+console.log("Comparison using == ", equality_using_double);
+console.log("Comparison using === ", equality_using_tripple);
+// Object :
+var obj = {name,lName};
+obj['fName'] = name + " " + lName;
+obj['salary'] = 20000;
+obj['age'] = 22;
+obj['address'] = 'Keshav Nagar';
+console.log("object is:", obj);
+var space_add = name + " " + lName;
+// Array :
+var arr = [110,20,"priyanka",30,"piyush"];
+//console.log("Array :", arr);
+arr.push(55,10);
+//console.log("Array :", arr);
+arr.push(name,number,string);
+console.log("Array :", arr);
+var zeroth_index_element = arr[0];
+var nineth_index_element = arr[9];
+console.log("Zeroth Element :", zeroth_index_element, typeof(zeroth_index_element));
+console.log("Nineth Element :", nineth_index_element, typeof(nineth_index_element));
+console.log("Length of Array :", arr.length);
+for(var index = 0; index < arr.length; index++)
+  {
+    //console.log("Printing Array Elements At Index :" + index + " " + "Actual Elements is :", arr[index]);
+    //  console.log("Hi")
+    console.log(arr[index]);
+  }
+  // for using in operator
+
+   for(var index in arr)
+   {
+     //console.log("in operator :", index, arr[index]);
+     console.log("in operator :", arr[index]);
+
+   }
+
+  // for using of operator:
+
+   for(var item of arr)
+   {
+     console.log("of operator:", item);
+   }
+
+   // object iterations:
+    var obj = {"name":"Sonali", "fName":"Gharte", "age":"22"}
+    var value_of_key_name = obj['age'];
+    for(var key in obj)
+    {
+      //console.log("Keys and values inside object are:", key, obj[key]);
+      console.log("Values inside object are:", obj[key]);
+
+    }
+
